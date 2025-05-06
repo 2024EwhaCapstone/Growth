@@ -28,7 +28,8 @@
 
 | **항목** | **내용** |
 | --- | --- |
-| (1) 요구사항 정의 | ![Image](https://github.com/user-attachments/assets/658f663a-da5b-4f03-9d62-83938b6ca2a8) ![Image](https://github.com/user-attachments/assets/fee1d1fd-dfe6-4719-bd34-007880625b76) |
+| (1) 요구사항 정의 | ![Image](https://github.com/user-attachments/assets/658f663a-da5b-4f03-9d62-83938b6ca2a8) ![Image](https://github.com/user-attachments/assets/fee1d1fd-dfe6-4719-bd34-007880625b76) <img alt="image" src="https://github.com/user-attachments/assets/4421ad62-ec6e-4ac6-851f-343b5fa66c21" />
+|
 | (2) 전체 시스템 구성 | ![Image](https://github.com/user-attachments/assets/cfc37033-b41c-4ec8-a843-b144c9c4b356) <img width="1302" alt="image" src="https://github.com/user-attachments/assets/35fb03eb-dc6e-49a7-b3db-55d52131627b" />
 |
 | (3) 주요엔진 및 기능 설계 | 1. **프론트엔드**<br>- 프레임워크로 리액트 네이티브를 사용하여 iOS, 안드로이드 모두 대상으로 하여 개발하며 typescript를 통해 안정성 있는 개발을 한다.<br>- AWS Amplify를 통해 배포하여 CI/CD 자동화와 애자일 방식의 개발을 목표로 한다.<br><br>2. **백엔드**<br>- Spring Boot 기반으로 REST API를 개발하며, Docker로 컨테이너화하여 EC2 인스턴스 내에서 구동된다.<br>- Blue-Green Deployment 방식으로 두 개의 컨테이너(port: 8080, 8081)를 운영하고, 무중단 배포를 위해 Nginx로 트래픽을 전환한다.<br>- 데이터베이스는 Amazon RDS(MySQL)를 사용하고, 이미지 및 파일 저장은 Amazon S3로 처리한다.<br><br>3. **AI**<br>- GPT-4o mini를 프롬프팅하여 원하는 재료 기반 레시피를 추천 받는다.<br>- 사진을 넣으면 OCR이 이미지에서 텍스트를 추출하여 식재료 상세정보를 출력한다.<br>- 입력한 이미지 기반으로 YOLO가 식재료의 상한 부분을 탐지하고, GPT-4 Vision이 해당 이미지 분석을 통해 신선도 상태를 텍스트로 출력해준다. |
