@@ -52,7 +52,7 @@ npx react-native run-ios
 1. xcode 실행
 2. `.app` 바이너리 파일 준비 (예: `000.app`)
    (cookit.app binary file 설치)
-   [Download iOS .app binary (cookie.app.zip)](https://github.com/2024EwhaCapstone/Growth/releases/download/v1.0.0/cookit.app.zip)
+  [Download the .app binary for Simulator (cookit.zip)](./cookit.zip)
 3. 다음의 명령어 실행
 ```bash
 open -a Simulator
