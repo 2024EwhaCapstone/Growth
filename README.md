@@ -86,6 +86,6 @@ npx react-native run-ios
 3. 다음의 명령어 실행
 ```bash
 open -a Simulator
-xcrun simctl install booted ~/app파일 주소
+xcrun simctl install booted ~/Downloads/cookit.app
 xcrun simctl launch booted org.reactjs.native.yoonjinchoi.wefresh
 ```
